@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h1>Marvellous Infosystem</h1>
+
+<h2>Login Form</h2>
+
+  
+  <div>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="UserName" [(ngModel)]="UserName" type="text" class="form-control" name="UserName" required>
+    <mat-hint>Please enter your name</mat-hint>
+  </mat-form-field>
+  </div>
+
+  <td><mat-form-field class="example-full-width">
+    <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+  </mat-form-field></td>
+  
+    
+<div class="button-row">
+  <button (click)="fun(UserName,password)" mat-raised-button color="primary">Submit</button>
+</div>
